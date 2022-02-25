@@ -43,7 +43,7 @@ async def _(_,message):
     try:
         ids = await getIds(message.matches[0].group(0))
         videoInPlaylist = len(ids)
-        randomdir = "/tmp/"+str(randint(1,100000000))
+        randomdir = f"/tmp/{str(randint(1,100000000))}"
         mkdir(randomdir)
         for id in ids:
             PForCopy = await message.reply_photo(f"https://i.ytimg.com/vi/{id[0]}/hqdefault.jpg",caption=f"🎧 Title : `{id[3]}`\n🎤 Artist : `{id[2]}`\n💽 Track No : `{id[1]}`\n💽 Total Track : `{videoInPlaylist}`")

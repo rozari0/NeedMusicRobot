@@ -38,7 +38,7 @@ async def spotify_dl(_,message):
     try:
         parsed_item = await parse_spotify_url(link)
         item_type, item_id = parsed_item[0],parsed_item[1]
-        randomdir = "/tmp/"+str(randint(1,100000000))
+        randomdir = f"/tmp/{str(randint(1,100000000))}"
         mkdir(randomdir)
         if item_type in ["show", "episode"]:
             items = await getIds(link)
