@@ -21,6 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+
 from pyrogram import Client
 from os import environ,sys,mkdir,path
 import logging
@@ -54,10 +55,8 @@ if OWNER_ID not in SUDO_USERS:
     SUDO_USERS.append(OWNER_ID)
 AUTH_CHATS = environ.get('AUTH_CHATS','-1001576243355').split()
 AUTH_CHATS = [int(_x) for _x in AUTH_CHATS]
-LOG_GROUP = environ.get("LOG_GROUP", None)
-if LOG_GROUP:
+if LOG_GROUP := environ.get("LOG_GROUP", None):
     LOG_GROUP = int(LOG_GROUP)
-  # Get It From @ARQRobot
 ARQ_API_KEY = ""
 ARQ_API_URL = "https://arq.hamker.in"
 aiohttpsession = ClientSession()
