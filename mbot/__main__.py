@@ -21,8 +21,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
+from os import mkdir, path, sys
+
 from mbot import Mbot
-from os import sys,mkdir,path
 
 if __name__ == "__main__":
     if not path.exists("cache"):
