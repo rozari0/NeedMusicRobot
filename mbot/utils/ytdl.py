@@ -43,7 +43,7 @@ def getIds(video):
                 ]
                 for x in info_dict
             )
-        except:
+        except Exception:
             ids.append(
                 [
                     info_dict.get("id"),
