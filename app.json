@@ -1,14 +1,14 @@
 {
-  "name": "You Need Music",
-  "description": "A simple Telegram bot to download music.",
+  "name": "@descargador_multimedia_v2_bot",
+  "description": "A simple Telegram bot to download audios and videos.",
   "keywords": [
     "bot",
     "music",
     "music downloader"
   ],
-  "repository": "https://github.com/rozari0/NeedMusicRobot/",
-  "website": "https://t.me/NeedMusicRobot",
-  "success_url": "https://t.me/NeedMusicRobot",
+  "repository": "is under construction",
+  "website": "https://t.me/descargador_multimedia_v2_bot",
+  "success_url": "https://t.me/descargador_multimedia_v2_bot",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
