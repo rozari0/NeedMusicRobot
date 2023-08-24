@@ -1,7 +1,5 @@
-FROM archlinux/archlinux:latest
-
-# Install the base packages and any dependencies
-RUN pacman -Syu --noconfirm && pacman -S --noconfirm python-pip git
+# Pulling python docker image directly
+FROM python:alpine3.17
 
 # Changing the working directory
 WORKDIR /app
