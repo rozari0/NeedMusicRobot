@@ -42,8 +42,6 @@ To deploy this project run
   docker build . -t musicbot
   docker run musicbot
 ```
-### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/rozari0/MusicDownloader/)
 
 ## Environment Variables
 

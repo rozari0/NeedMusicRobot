@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyrogram = "*"
+tgcrypto = "*"
+yt-dlp = "*"
+python-dotenv = "*"
+requests = "*"
+asgiref = "*"
+deezer-python = "*"
+spotipy = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"
